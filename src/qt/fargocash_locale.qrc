@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/fargocash_bg.qm</file>
+        <file alias="de">locale/fargocash_de.qm</file>
+        <file alias="en">locale/fargocash_en.qm</file>
+        <file alias="es">locale/fargocash_es.qm</file>
+        <file alias="fi">locale/fargocash_fi.qm</file>
+        <file alias="fr">locale/fargocash_fr.qm</file>
+        <file alias="it">locale/fargocash_it.qm</file>
+        <file alias="ja">locale/fargocash_ja.qm</file>
+        <file alias="pl">locale/fargocash_pl.qm</file>
+        <file alias="pt">locale/fargocash_pt.qm</file>
+        <file alias="ru">locale/fargocash_ru.qm</file>
+        <file alias="sk">locale/fargocash_sk.qm</file>
+        <file alias="sv">locale/fargocash_sv.qm</file>
+        <file alias="vi">locale/fargocash_vi.qm</file>
+        <file alias="zh_CN">locale/fargocash_zh_CN.qm</file>
+        <file alias="zh_TW">locale/fargocash_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+[Unit]
+Description=FRGS's distributed currency daemon
+After=network.target
+
+[Service]
+User=fargocash
+Group=fargocash
+
+Type=forking
+PIDFile=/var/lib/fargocashd/fargocashd.pid
+
+ExecStart=/usr/bin/fargocashd -daemon -pid=/var/lib/fargocashd/fargocashd.pid \
+          -conf=/etc/fargocash/fargocash.conf -datadir=/var/lib/fargocashd
+
+ExecStop=-/usr/bin/fargocash-cli -conf=/etc/fargocash/fargocash.conf \
+         -datadir=/var/lib/fargocashd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
